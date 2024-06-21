@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+div{
+    width: 100%;
+    height: 100vh;
+    background-color: #8e44ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Dancing Script";
+}
+h1{
+    color: white;
+    background: transparent;
+    text-shadow: 0 2px 2px black;
+    font-size: 50px;
+    font-weight: 500;
+}
+input{
+    width: 50%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    text-align: center;
+}
+button{
+    line-height: 24px;
+    padding: 0 20px;
+    background-color: #9b59b6;
+    color: white;
+    border: 2px solid #ecf0f1;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+} */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    background-image: url("../../../../../ArfaTower/slider-auto/image/img2.jpg");
+    cursor: url("../../../../../Devsinc/React/inputform/src/items/crusor-mouse.png"),auto;
+    background-size: cover;
+    font-family: "Briem Hand", cursive;
+  }
+  
+  .game-area {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    opacity: .7 ;
+    border-radius: 10px;
+  }
+  
+  .snake-segment, .food {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px dotted grey;
+  }
+  
+  .food {
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  .game-over {
+    text-align: center;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 23px;
+  }
+  
+  .btn{
+    padding-top: 20px;
+  }
+
+  .btn p{
+    word-spacing: 5px;
+    letter-spacing: 7px;
+    font-size: 15px;
+  }
+
+  .score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+  }
+
+  .game-over button{
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 20px;
+  }
+
+  .game-over button:hover{
+    color: rgb(186, 152, 152);
 }
